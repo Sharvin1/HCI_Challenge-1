@@ -16,7 +16,7 @@ function getRandomColor() {
   return color;
 }
 
-/*document.querySelector('#blockHand').addEventListener('click', function (evt) {
+document.querySelector('#blockHand').addEventListener('click', function (evt) {
   // Create a blank entity.
   var newVoxelEl = document.createElement('a-entity');
 
@@ -31,7 +31,7 @@ function getRandomColor() {
   this.appendChild(newVoxelEl);
 });
 
-function setRandomColor() {
+/*function setRandomColor() {
   var getSpheres = document.getElementByTagNames('a-sphere');
   for(var i = 0; i < getSpheres.length; i++) {
     getSpheres.innerHTML = function() {
