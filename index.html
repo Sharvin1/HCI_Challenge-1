@@ -19,16 +19,18 @@
 		<a-camera>
        
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 1500">
+          	cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-	        <a-ring id="cursorRing" 
-	          position="0 0 -1"
-	          radius-inner= "0.01"
-	          radius-outer= "0.02"
-	          material="color: yellow; shader: flat">
 
-	        </a-ring>
+	    <a-ring id="cursorRing" 
+	        position="0 0 -1"
+	        radius-inner= "0.01"
+	        radius-outer= "0.02"
+	        material="color: yellow; shader: flat">
+
+	    </a-ring>
      	</a-camera>
+
 
 		<a-entity environment="preset: dream; gridColor: #c5a543; groundColor: #300763">
 	
@@ -55,13 +57,8 @@
 				random-color>
 			</a-sphere>
 
-<!--  			<a-entity geometry="primitive: box; depth: 0.5; height: 0.5; width 0.5"
-            material="shader: standard"
-            position="0 0.5 -2"
-            random-color>
-            </a-entity>
- -->
-		<!-- <a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity> -->
+
+		
 			
 		</a-entity>
 	</a-scene>
