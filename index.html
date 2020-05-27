@@ -5,9 +5,9 @@
 	<title>Challenge 1</title>
 	<meta charset="utf-8"/>
 	<link href= "css/index.css" rel= "stylesheet" type= "text/css" />
-	<script src= "script/script.js"></script>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+	<script src= "script/script.js"></script>
 </head>
 
 <body>	
@@ -32,10 +32,10 @@
 
 		<a-entity environment="preset: dream; gridColor: #c5a543; groundColor: #300763">
 	
-<!-- 			<a-sphere  
+			<a-sphere  
 				position= "-3 5 -10" 
 				scale= "2 2 2"
-				src= "#purpletxt">
+				>
 			</a-sphere>
 			<a-sphere 
 				position= "5 3 -5"
@@ -51,17 +51,17 @@
 
 			</a-sphere>
 			<a-sphere  #e37564
-				position= "0 2 -5">
+				position= "0 2 -5"	
+				random-color>
+			</a-sphere>
 
-			</a-sphere> -->
-
- 			<a-entity geometry="primitive: box; depth: 0.5; height: 0.5; width 0.5"
+<!--  			<a-entity geometry="primitive: box; depth: 0.5; height: 0.5; width 0.5"
             material="shader: standard"
             position="0 0.5 -2"
             random-color>
             </a-entity>
-
-		<a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity>
+ -->
+		<!-- <a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity> -->
 			
 		</a-entity>
 	</a-scene>
