@@ -14,6 +14,34 @@
 		<a-asset>
 			<img id= "purpletxt" src= "images/purpletxt.jpg"/>
 		</a-asset>
+
+		<a-camera>
+       
+        <a-entity id="mouseCursor"
+          cursor="fuse: true; fuseTimeout: 1500">
+        </a-entity>
+	        <a-ring id="cursorRing" 
+	          position="0 0 -1"
+	          radius-inner= "0.01"
+	          radius-outer= "0.02"
+	          material="color: yellow; shader: flat"
+	          
+	          animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: blue; 
+		          startEvents: mouseenter; 
+		          dur: 500;"
+	          animation__mouseleave="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: #e3df64; 
+		          startEvents: mouseleave; 
+		          dur: 500;">
+
+	        </a-ring>
+     	</a-camera>
+
 		<a-entity environment="preset: dream; gridColor: #c5a543; groundColor: #300763">
 			<a-sphere 
 				 
