@@ -12,7 +12,7 @@
 
 <body>	
 	<a-scene>
-		<a-text value= "Find the red blinking ball"	font="roboto"  negate="false" scale="2 2 1" position="-3 2 -5" color= "black"></a-text>
+		<a-text value= "Find the blinking ball"	font="roboto"  negate="false" scale="2 2 1" position="-3 2 -5" color= "black"></a-text>
 		<a-asset>
 			<img id= "purpletxt" src= "images/purpletxt.jpg"/>
 		</a-asset>
@@ -33,7 +33,7 @@
      	</a-camera>
 
 
-		<a-entity environment="preset: dream; gridColor: #c5a543; groundColor: #300763">
+		<a-entity environment="preset: japan; gridColor: #c5a543; groundColor: #300763">
 	
 			<a-sphere  
 				random-color
@@ -42,7 +42,7 @@
 				animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -53,7 +53,7 @@
 					animation__mouseenter="
 			        	property: components.material.material.color; 
 			        	type: color; 
-			        	to: #e3df64; 
+			        	to: red; 
 			            startEvents: mouseenter; 
 			            dur: 3000;
 			            easing: easeOutQuad;
@@ -67,7 +67,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -81,7 +81,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -96,7 +96,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -111,7 +111,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -119,15 +119,15 @@
 			</a-sphere>
 		
 			<a-sphere 
-				random-color
-				position= "0 4 10"	
+				color= "#FFFFFF"
+				position= "0 6 10"	
 			
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: blue; 
+		          to: black; 
 		          startEvents: mouseenter; 
-		          dur: 1500;
+		          dur: 500;
 		          easing: easeOutQuad;
 		          loop: true">
 			</a-sphere>
@@ -138,7 +138,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -151,7 +151,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -164,7 +164,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -177,7 +177,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -190,7 +190,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -203,7 +203,7 @@
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
@@ -212,11 +212,76 @@
 
 			<a-sphere 
 				random-color
-				position= "-3 9 7"
+				position= "-7 9 6"
 	        	animation__mouseenter="
 		          property: components.material.material.color; 
 		          type: color; 
-		          to: #e3df64; 
+		          to: red; 
+		          startEvents: mouseenter; 
+		          dur: 3000;
+		          easing: easeOutQuad;
+		          ">
+			</a-sphere>
+
+			<a-sphere 
+				random-color
+				position= "9 4 5"
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: red; 
+		          startEvents: mouseenter; 
+		          dur: 3000;
+		          easing: easeOutQuad;
+		          ">
+			</a-sphere>
+
+			<a-sphere 
+				random-color
+				position= "4 8 5"
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: red; 
+		          startEvents: mouseenter; 
+		          dur: 3000;
+		          easing: easeOutQuad;
+		          ">
+			</a-sphere>
+
+			<a-sphere 
+				random-color
+				position= "9 7 3"
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: red; 
+		          startEvents: mouseenter; 
+		          dur: 3000;
+		          easing: easeOutQuad;
+		          ">
+			</a-sphere>
+
+			<a-sphere 
+				random-color
+				position= "10 9 0"
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: red; 
+		          startEvents: mouseenter; 
+		          dur: 3000;
+		          easing: easeOutQuad;
+		          ">
+			</a-sphere>
+
+			<a-sphere 
+				random-color
+				position= "10 3 -1"
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: red; 
 		          startEvents: mouseenter; 
 		          dur: 3000;
 		          easing: easeOutQuad;
