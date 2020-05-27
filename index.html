@@ -5,6 +5,7 @@
 	<title>Challenge 1</title>
 	<meta charset="utf-8"/>
 	<link href= "css/index.css" rel= "stylesheet" type= "text/css" />
+	<script src= "script/script.js"></script>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 </head>
@@ -24,36 +25,44 @@
 	          position="0 0 -1"
 	          radius-inner= "0.01"
 	          radius-outer= "0.02"
-	          material="color: yellow; shader: flat"
-	          
-	          animation__mouseenter="
-		          property: components.material.material.color; 
-		          type: color; 
-		          to: blue; 
-		          startEvents: mouseenter; 
-		          dur: 500;"
-	          animation__mouseleave="
-		          property: components.material.material.color; 
-		          type: color; 
-		          to: #e3df64; 
-		          startEvents: mouseleave; 
-		          dur: 500;">
+	          material="color: yellow; shader: flat">
 
 	        </a-ring>
      	</a-camera>
 
 		<a-entity environment="preset: dream; gridColor: #c5a543; groundColor: #300763">
-			<a-sphere 
-				 
+	
+<!-- 			<a-sphere  
 				position= "-3 5 -10" 
 				scale= "2 2 2"
 				src= "#purpletxt">
-				
 			</a-sphere>
-			<a-sphere color= "#e3dd64" position= "5 3 -5"></a-sphere>
-			<a-sphere color= "#e37564" position= "0 2 -5"></a-sphere>
+			<a-sphere 
+				position= "5 3 -5"
 
-			<a-sky color="#ECECEC"></a-sky>
+	        	animation__mouseenter="
+		          property: components.material.material.color; 
+		          type: color; 
+		          to: #e3df64; 
+		          startEvents: mouseenter; 
+		          dur: 2000;
+		          easing: easeOutQuad;
+		          loop: true">
+
+			</a-sphere>
+			<a-sphere  #e37564
+				position= "0 2 -5">
+
+			</a-sphere> -->
+
+ 			<a-entity geometry="primitive: box; depth: 0.5; height: 0.5; width 0.5"
+            material="shader: standard"
+            position="0 0.5 -2"
+            random-color>
+            </a-entity>
+
+		<a-entity id="blockHand" hand-controls="right" controller-cursor intersection-spawn="event: click; mixin: voxel"></a-entity>
+			
 		</a-entity>
 	</a-scene>
 </body>	
